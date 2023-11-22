@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar-eg" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفن الأسلامى</title>
+    <link rel="stylesheet" href="master.css"/>
+    <script src="./store.js" async></script>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="./index.html">الرئيسية</a></li>
+                <li><a href="./store.html">المتجر</a></li>
+                <li><a href="./about.html">نبذه عنا</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo larg-logo">الفن الاسلامى</h1>
+    </header>
+    
+
+    <section class="section-container">
+            <h2 class="section-title">تذكار عربى</h2>
+
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">كوفية فلسطينية سوداء</span>
+                    <img class="shop-item-image" src="./images/scarf.png" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">60ج</span>
+                        <button role="button" class="btn shop-item-button">أضف الى العربة</button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">كوفية فلسطينية حمراء</span>
+                    <img class="shop-item-image" src="./images/red-scarf.png" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">70ج</span>
+                        <button role="button" class="btn shop-item-button">أضف الى العربة</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">ملابس</h2>
+
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">تي-شرت</span>
+                    <img class="shop-item-image" src="./images/t-shirt.png" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">80ج</span>
+                        <button role="button" class="btn shop-item-button">أضف الى العربة</button>
+                    </div>
+                </div>
+    
+                <div class="shop-item">
+                    <span class="shop-item-title">كاب</span>
+                    <img class="shop-item-image" src="./images/cap.jpg" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">60ج</span>
+                        <button role="button" class="btn shop-item-button">أضف الى العربة</button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="section-container">
+        <h2 class="section-title">عربة التسوق</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>المنتج</th>
+                    <th>السعــــر</th>
+                    <th>الكمية</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="cart-purchase-items-container">
+                <tr>
+                    <td>
+                        <img src="./images/scarf.png" alt="" width="100">
+                        <span class="cart-item-tile">كوفية فلسطينية سوداء</span>
+                    </td>
+                    <td>
+                        <span class="cart-purchase-item-price">60ج</span>
+                    </td>
+                    <td>
+                        <input type="number" value="1" class="cart-quantity-input">
+                        <button role="button" class="btn danger-button">إزالــــة</button>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <img src="./images/red-scarf.png" alt="" width="100">
+                        <span class="cart-item-tile">كوفية فلسطينية حمراء</span>
+                    </td>
+                    <td>
+                        <span class="cart-purchase-item-price">50ج</span>
+                    </td>
+                    <td>
+                        <input type="number" value="1" class="cart-quantity-input">
+                        <button role="button" class="btn danger-button">إزالــــة</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><strong>الإجمالى</strong><span id="cart-price-total">110ج</span></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button id="purchase" class="btn" role="button">إشترى</button>
+    </section>
+
+
+    <footer>
+        <div class="main-container container">
+            <h1 class="logo">الفن الاسلامى</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite.svg#icon-facebook"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite.svg#icon-pinterest"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite.svg#icon-twitter"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
