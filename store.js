@@ -24,7 +24,22 @@ function ready() {
         let button = addToCartButtons[i];
         button.addEventListener('click', addToCartClicked)
     }
+
+
+    document.getElementById("purchase").addEventListener('click', purhchaseClicked)
 }   
+
+
+function purhchaseClicked() {
+    alert("شكراً على شرائك منتجاتنا.");
+
+    let cartItems = document.getElementsByClassName("cart-purchase-items-container")[0];
+
+    while (cartItems.hasChildNodes())  {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal();
+}
 
 function addToCartClicked(event) {
     let button = event.target;
